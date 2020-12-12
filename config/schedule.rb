@@ -34,6 +34,10 @@ every 1.day, at: ['9:50 am'] do
   rake 'push_line:push_line_message_prepare'
 end
 
+every 1.day, at: ['10:00 am'] do
+  rake 'push_line:push_line_message_start'
+end
+
 every 1.day, at: ['1:00 pm'] do
   rake 'push_line:push_line_message_afternoon'
 end

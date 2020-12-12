@@ -22,7 +22,7 @@ namespace :push_line do
   task push_line_message_start: :environment do
     message = {
       type: 'text',
-      text: '朝礼の時間です！\n今日も1日頑張りましょう！'
+      text: "朝礼の時間です！\n今日も1日頑張りましょう！"
     }
     client = Line::Bot::Client.new { |config|
       config.channel_secret = ENV['LINE_CHANNEL_SECRET']
