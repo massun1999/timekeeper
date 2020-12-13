@@ -13,6 +13,9 @@ AM 10：00, PM 13:00, PM 18:00, PM 18:30分にメッセージとスタンプが�
 現在の実装段階では最低限の機能しか実装できていません。
 これからクライアントと相談をしながら追加機能と保守管理を行って行く予定です。
 
+友達追加URL
+https://lin.ee/ff7zVt9
+
 ## 開発環境
 
 Ruby2.6.5/Ruby on Rails6.0.3.4/Mysql/git hub/Sequel Pro/Messaging API
