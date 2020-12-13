@@ -1,24 +1,37 @@
-# README
+# LINE時間管理Bot
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## アプリケーションの概要
+Messaging APIを用いて予め決められた時間にお知らせ通知が送信されるBotです。
+LINEグループでの使用を目的とし、グループLINEへの参加イベント、指定した時間へのプッシュメッセージが送信される仕様です。
+グループLINEでの使用を目的としているため応答メッセージの機能は実装していません。
+AM 10：00, PM 13:00, PM 18:00, PM 18:30分にメッセージとスタンプが送られます。
 
-Things you may want to cover:
+このBotを作成した背景としては、
+駆け出しエンジニアが集まるチームから実際に作成依頼があったからです。
+毎日効率よく学習ができるように決められた時間に通知が届くようにして欲しいという要望の元、
+企画、要件定義、開発に至るまで個人で行いました。
+現在の実装段階では最低限の機能しか実装できていません。
+これからクライアントと相談をしながら追加機能と保守管理を行って行く予定です。
 
-* Ruby version
+## 開発環境
 
-* System dependencies
+Ruby2.6.5/Ruby on Rails6.0.3.4/Mysql/git hub/Sequel Pro/Messaging API
 
-* Configuration
+## 実装した機能
 
-* Database creation
+- 指定した時間にプッシュメッセージを送信
+- LINEグループへの参加イベントで応答メッセージを送信・グループIDを保存
+- LINEスタンプの送信
 
-* Database initialization
 
-* How to run the test suite
+## これから実装したい機能
 
-* Services (job queues, cache servers, search engines, etc.)
+- グループメンバーが任意のリマインダーを作成できるよう機能
 
-* Deployment instructions
+## テーブル設計
 
-* ...
+### groupsテーブル
+
+| Column   | Type   | Option |
+|----------|--------|--------|
+| group_id | string |        |
